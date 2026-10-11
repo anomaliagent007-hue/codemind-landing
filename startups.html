@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codemind AI — Perusahaan &amp; Traksi</title>
+<meta name="description" content="Profil perusahaan PT Codemind Indonesia, metrik produk, tim, dan informasi pendanaan.">
+<style>
+:root,[data-theme="light"]{
+  --ink:#14181f; --surface:#fafafa; --card:#ffffff; --border:#e4e7ec;
+  --muted:#667085; --accent:#e8590c; --accent-soft:#fff4ec;
+  --mono:"SFMono-Regular",ui-monospace,Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --r:10px; --shadow:0 1px 2px rgba(16,24,40,.06),0 1px 3px rgba(16,24,40,.1);
+}
+[data-theme="dark"]{
+  --ink:#e7eaf0; --surface:#0e1116; --card:#161b22; --border:#262d38;
+  --muted:#8b97a8; --accent:#ff7a33; --accent-soft:#2a1810;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 1px 3px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);-webkit-font-smoothing:antialiased;color:var(--ink);background:var(--surface);line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--border);background:var(--card)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;font-size:18px;text-decoration:none;color:var(--ink)}
+.logo span{color:var(--accent)}
+a.btn{display:inline-block;padding:9px 18px;border-radius:var(--r);font-size:14px;font-weight:600;text-decoration:none;border:1px solid var(--border);background:var(--card);color:var(--ink)}
+a.btn:hover{border-color:var(--ink)}
+
+h1{font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;font-weight:800;margin:56px 0 8px}
+.sub{color:var(--muted);font-size:17px;margin-bottom:40px}
+h2{font-size:22px;letter-spacing:-.01em;font-weight:800;margin:48px 0 16px;padding-top:32px;border-top:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);font-size:14.5px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--border)}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--surface)}
+tr:last-child td{border-bottom:none}
+td.k{color:var(--muted);width:38%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:24px 0}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:24px;box-shadow:var(--shadow)}
+.stat .n{font-size:32px;font-weight:800;letter-spacing:-.02em}
+.stat .l{font-size:13px;color:var(--muted);margin-top:4px}
+p.note{font-size:13px;color:var(--muted);margin-top:12px}
+ul.stack{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+ul.stack li{font-family:var(--mono);font-size:12.5px;background:var(--card);border:1px solid var(--border);border-radius:99px;padding:5px 14px}
+footer{border-top:1px solid var(--border);padding:32px 0;margin-top:64px;background:var(--card)}
+footer p{color:var(--muted);font-size:13px}
+@media(max-width:640px){.stats{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">codemind<span>.ai</span></a>
+    <a class="btn" href="index.html">← Kembali ke Produk</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>PT Codemind Indonesia</h1>
+  <p class="sub">Asisten coding AI untuk engineer Indonesia. Didirikan Januari 2024, berkantor di Jakarta.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="n">5.000+</div><div class="l">Developer terdaftar</div></div>
+    <div class="stat"><div class="n">150rb</div><div class="l">Baris kode di-generate / bulan</div></div>
+    <div class="stat"><div class="n">5</div><div class="l">Anggota tim</div></div>
+  </div>
+  <p class="note">Metrik per Oktober 2026. Angka detail &amp; growth curve tersedia atas permintaan (kontak di bawah).</p>
+
+  <h2>Profil Perusahaan</h2>
+  <table>
+    <tr><td class="k">Nama legal</td><td>PT Codemind Indonesia</td></tr>
+    <tr><td class="k">Tanggal berdiri</td><td>Januari 2024</td></tr>
+    <tr><td class="k">Kantor pusat</td><td>Jakarta, Indonesia</td></tr>
+    <tr><td class="k">Situs &amp; email</td><td>codemind.ai · halo@codemind.ai</td></tr>
+    <tr><td class="k">Deskripsi produk</td><td>Platform AI untuk auto-completion kode, generator test case dari deskripsi Bahasa Indonesia, dan code review otomatis. Integrasi GitHub &amp; GitLab, server di Asia Tenggara.</td></tr>
+  </table>
+
+  <h2>Pendanaan</h2>
+  <table>
+    <tr><td class="k">Stage</td><td>Pre-seed</td></tr>
+    <tr><td class="k">Total raised</td><td>US$250.000</td></tr>
+    <tr><td class="k">Round terakhir</td><td>Angel, Juni 2024</td></tr>
+    <tr><td class="k">Investor</td><td>KoinWorks Angel Network + 3 angel investor individual</td></tr>
+    <tr><td class="k">Revenue</td><td>Pre-revenue (fase beta berbayar, peluncuran publik Q1 2027)</td></tr>
+  </table>
+
+  <h2>Tim</h2>
+  <table>
+    <tr><th>Peran</th><th>Jumlah</th><th>Fokus</th></tr>
+    <tr><td>Engineering</td><td>3</td><td>Model inference, editor extension, infra</td></tr>
+    <tr><td>Product</td><td>1</td><td>Riset pengguna, roadmap, onboarding</td></tr>
+    <tr><td>CEO</td><td>1</td><td>Strategi, partnership, fundraising</td></tr>
+  </table>
+
+  <h2>Teknologi</h2>
+  <ul class="stack">
+    <li>Python</li><li>TypeScript</li><li>Go</li><li>PyTorch</li>
+    <li>PostgreSQL</li><li>Redis</li><li>Kubernetes</li>
+    <li>VS Code API</li><li>JetBrains Plugin SDK</li><li>GitHub Apps</li>
+  </ul>
+
+  <h2>Kontak</h2>
+  <table>
+    <tr><td class="k">Email bisnis</td><td>halo@codemind.ai</td></tr>
+    <tr><td class="k">Email founder</td><td>fandi@codemind.ai</td></tr>
+    <tr><td class="k">LinkedIn</td><td>linkedin.com/company/codemind-ai</td></tr>
+    <tr><td class="k">GitHub</td><td>github.com/codemind-ai</td></tr>
+  </table>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 PT Codemind Indonesia. Halaman perusahaan — data untuk program mitra &amp; pengajuan kredit cloud.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var t = localStorage.getItem("cm-theme");
+  if(!t) t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", t);
+})();
+</script>
+
+</body>
+</html>
