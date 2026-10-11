@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Codemind AI — Perusahaan &amp; Traksi</title>
-<meta name="description" content="Profil perusahaan PT Codemind Indonesia, metrik produk, tim, dan informasi pendanaan.">
+<title>Codemind — Profil Proyek &amp; Kesiapan Mitra</title>
+<meta name="description" content="Profil proyek Codemind: perangkat lunak yang sudah dibangun dan dirilis, tumpukan teknologi, dan kesiapan untuk program mitra kredit cloud.">
 <style>
 :root,[data-theme="light"]{
   --ink:#14181f; --surface:#fafafa; --card:#ffffff; --border:#e4e7ec;
@@ -43,6 +43,13 @@ td.k{color:var(--muted);width:38%}
 p.note{font-size:13px;color:var(--muted);margin-top:12px}
 ul.stack{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 ul.stack li{font-family:var(--mono);font-size:12.5px;background:var(--card);border:1px solid var(--border);border-radius:99px;padding:5px 14px}
+.repo{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px 20px;margin-bottom:12px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow)}
+.repo:hover{border-color:var(--accent)}
+.repo .rn{font-weight:700;font-size:15.5px;font-family:var(--mono)}
+.repo .rd{font-size:14px;color:var(--muted);margin-top:5px}
+.repo .rt{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.repo .rt span{font-family:var(--mono);font-size:11.5px;background:var(--accent-soft);color:var(--accent);border-radius:99px;padding:3px 10px}
+.empty{border:1px dashed var(--border);border-radius:var(--r);padding:20px;color:var(--muted);font-size:14px;background:var(--card)}
 footer{border-top:1px solid var(--border);padding:32px 0;margin-top:64px;background:var(--card)}
 footer p{color:var(--muted);font-size:13px}
 @media(max-width:640px){.stats{grid-template-columns:1fr}}
@@ -53,67 +60,83 @@ footer p{color:var(--muted);font-size:13px}
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="index.html">codemind<span>.ai</span></a>
-    <a class="btn" href="index.html">← Kembali ke Produk</a>
+    <a class="logo" href="index.html">codemind<span>_</span></a>
+    <a class="btn" href="index.html">&larr; Kembali ke Produk</a>
   </div>
 </header>
 
 <main class="wrap">
-  <h1>PT Codemind Indonesia</h1>
-  <p class="sub">Asisten coding AI untuk engineer Indonesia. Didirikan Januari 2024, berkantor di Jakarta.</p>
+  <h1>Profil Proyek Codemind</h1>
+  <p class="sub">Perangkat lunak yang sudah dibangun dan dirilis. Semua yang tercantum di halaman ini dapat diverifikasi dari repositori publik dan URL yang tertera.</p>
 
-  <div class="stats">
-    <div class="stat"><div class="n">5.000+</div><div class="l">Developer terdaftar</div></div>
-    <div class="stat"><div class="n">150rb</div><div class="l">Baris kode di-generate / bulan</div></div>
-    <div class="stat"><div class="n">5</div><div class="l">Anggota tim</div></div>
-  </div>
-  <p class="note">Metrik per Oktober 2026. Angka detail &amp; growth curve tersedia atas permintaan (kontak di bawah).</p>
-
-  <h2>Profil Perusahaan</h2>
+  <h2>Ringkasan</h2>
   <table>
-    <tr><td class="k">Nama legal</td><td>PT Codemind Indonesia</td></tr>
-    <tr><td class="k">Tanggal berdiri</td><td>Januari 2024</td></tr>
-    <tr><td class="k">Kantor pusat</td><td>Jakarta, Indonesia</td></tr>
-    <tr><td class="k">Situs &amp; email</td><td>codemind.knoxfinder.com · halo@codemind.knoxfinder.com</td></tr>
-    <tr><td class="k">Deskripsi produk</td><td>Platform AI untuk auto-completion kode, generator test case dari deskripsi Bahasa Indonesia, dan code review otomatis. Integrasi GitHub &amp; GitLab, server di Asia Tenggara.</td></tr>
+    <tr><td class="k">Nama proyek</td><td>Codemind</td></tr>
+    <tr><td class="k">Bentuk</td><td>Proyek perangkat lunak &mdash; tahap awal, dikembangkan secara independen</td></tr>
+    <tr><td class="k">Basis operasi</td><td>Indonesia</td></tr>
+    <tr><td class="k">Situs</td><td>codemind.knoxfinder.com</td></tr>
+    <tr><td class="k">Kontak</td><td><a href="mailto:halo@codemind.knoxfinder.com">halo@codemind.knoxfinder.com</a></td></tr>
+    <tr><td class="k">Repositori</td><td><a href="https://github.com/anomaliagent007-hue">github.com/anomaliagent007-hue</a></td></tr>
+    <tr><td class="k">Fokus</td><td>Infrastruktur AI: gateway multi-penyedia, orkestrasi agen, dan alat otomasi</td></tr>
   </table>
 
-  <h2>Pendanaan</h2>
-  <table>
-    <tr><td class="k">Stage</td><td>Pre-seed</td></tr>
-    <tr><td class="k">Total raised</td><td>US$250.000</td></tr>
-    <tr><td class="k">Round terakhir</td><td>Angel, Juni 2024</td></tr>
-    <tr><td class="k">Investor</td><td>KoinWorks Angel Network + 3 angel investor individual</td></tr>
-    <tr><td class="k">Revenue</td><td>Pre-revenue (fase beta berbayar, peluncuran publik Q1 2027)</td></tr>
-  </table>
+  <h2>Proyek yang Sudah Dirilis</h2>
 
-  <h2>Tim</h2>
-  <table>
-    <tr><th>Peran</th><th>Jumlah</th><th>Fokus</th></tr>
-    <tr><td>Engineering</td><td>3</td><td>Model inference, editor extension, infra</td></tr>
-    <tr><td>Product</td><td>1</td><td>Riset pengguna, roadmap, onboarding</td></tr>
-    <tr><td>CEO</td><td>1</td><td>Strategi, partnership, fundraising</td></tr>
-  </table>
+  <a class="repo" href="https://github.com/anomaliagent007-hue/hermes-mimo-bridge" target="_blank" rel="noopener">
+    <div class="rn">hermes-mimo-bridge</div>
+    <div class="rd">Jembatan produksi antara Hermes Agent dan API Xiaomi MiMo &mdash; penalaran rantai panjang dan orkestrasi multi-agen.</div>
+    <div class="rt"><span>Python</span><span>agent orchestration</span><span>LLM API</span><span>public</span></div>
+  </a>
 
-  <h2>Teknologi</h2>
+  <a class="repo" href="https://github.com/anomaliagent007-hue/mimo-ai-hub" target="_blank" rel="noopener">
+    <div class="rn">mimo-ai-hub</div>
+    <div class="rd">Platform pengembangan AI multi-agen: otomasi konten, agen Web3, dan pipeline pembuatan konten.</div>
+    <div class="rt"><span>multi-agent</span><span>Web3</span><span>automation</span><span>public</span></div>
+  </a>
+
+  <a class="repo" href="https://github.com/anomaliagent007-hue/technocore-demo" target="_blank" rel="noopener">
+    <div class="rn">technocore-demo</div>
+    <div class="rd">Integrasi DID Ed25519 untuk agen AI &mdash; identitas terverifikasi untuk agen otonom.</div>
+    <div class="rt"><span>Ed25519</span><span>DID</span><span>AI agents</span><span>public</span></div>
+  </a>
+
+  <a class="repo" href="https://github.com/anomaliagent007-hue/ci-lab" target="_blank" rel="noopener">
+    <div class="rn">ci-lab</div>
+    <div class="rd">Lab integrasi berkelanjutan &mdash; pengujian otomatis, build, dan alur rilis.</div>
+    <div class="rt"><span>CI/CD</span><span>automation</span><span>testing</span><span>private</span></div>
+  </a>
+
+  <p class="note">Repositori lain yang aktif dikerjakan: lapisan keputusan <code>otak/insting</code>, gateway LLM multi-penyedia <code>9router</code>, dan perkakas deploy Web3. Hubungi kontak di atas untuk akses.</p>
+
+  <h2>Tumpukan Teknologi</h2>
   <ul class="stack">
-    <li>Python</li><li>TypeScript</li><li>Go</li><li>PyTorch</li>
-    <li>PostgreSQL</li><li>Redis</li><li>Kubernetes</li>
-    <li>VS Code API</li><li>JetBrains Plugin SDK</li><li>GitHub Apps</li>
+    <li>Python</li><li>TypeScript</li><li>Go</li><li>Rust</li>
+    <li>Cloudflare Workers</li><li>PostgreSQL</li><li>Redis</li>
+    <li>Docker</li><li>Kubernetes</li><li>LLM APIs</li>
+    <li>Playwright</li><li>GitHub Actions</li>
   </ul>
+
+  <h2>Status Mitra &amp; Kredit Cloud</h2>
+  <table>
+    <tr><td class="k">Tahap</td><td>Tahap awal &mdash; pengembangan produk</td></tr>
+    <tr><td class="k">Pendanaan eksternal</td><td>Belum ada</td></tr>
+    <tr><td class="k">Pendapatan</td><td>Pra-pendapatan (produk belum diluncurkan komersial)</td></tr>
+    <tr><td class="k">Tujuan program</td><td>Kredit infrastruktur cloud untuk pengembangan dan pengujian</td></tr>
+    <tr><td class="k">Kontak program</td><td><a href="mailto:halo@codemind.knoxfinder.com">halo@codemind.knoxfinder.com</a></td></tr>
+  </table>
+  <p class="note">Informasi pada bagian ini disediakan apa adanya untuk keperluan verifikasi program mitra.</p>
 
   <h2>Kontak</h2>
   <table>
-    <tr><td class="k">Email bisnis</td><td>halo@codemind.knoxfinder.com</td></tr>
-    <tr><td class="k">Email founder</td><td>fandi@codemind.knoxfinder.com</td></tr>
-    <tr><td class="k">LinkedIn</td><td>linkedin.com/company/codemind-ai</td></tr>
-    <tr><td class="k">GitHub</td><td>github.com/codemind-ai</td></tr>
+    <tr><td class="k">Email umum</td><td><a href="mailto:halo@codemind.knoxfinder.com">halo@codemind.knoxfinder.com</a></td></tr>
+    <tr><td class="k">Email pendiri</td><td><a href="mailto:fandi@codemind.knoxfinder.com">fandi@codemind.knoxfinder.com</a></td></tr>
+    <tr><td class="k">GitHub</td><td><a href="https://github.com/anomaliagent007-hue">github.com/anomaliagent007-hue</a></td></tr>
   </table>
 </main>
 
 <footer>
   <div class="wrap">
-    <p>© 2026 PT Codemind Indonesia. Halaman perusahaan — data untuk program mitra &amp; pengajuan kredit cloud.</p>
+    <p>&copy; 2026 Codemind. Halaman profil proyek &mdash; disusun untuk keperluan verifikasi program mitra dan pengajuan kredit cloud.</p>
   </div>
 </footer>
 
